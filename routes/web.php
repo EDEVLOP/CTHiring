@@ -114,7 +114,7 @@ Route::get('/viewclient', [clientController::class, 'viewclientshow']);
 Route::post('/fetchdist', [StateController::class, 'getdistrict']);
 Route::post('/fetchcity', [StateController::class, 'getcity']);
 
-//dist and city for clientcontact
+//dist and city for clientcontact for git hub testing
 Route::post('/fetchdist_contact', [StateController::class, 'getdistrict_clientcontact']);
 Route::post('/fetchcity_contact', [StateController::class, 'getcity_clientcontact']);
 
