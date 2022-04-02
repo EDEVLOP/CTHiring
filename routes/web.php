@@ -104,8 +104,8 @@ Route::get('/clientinsert_mail', [clientController::class, 'client_usermail']);
 Route::put('/edit_client/{id}', [clientController::class, 'client_update']);
 
 // // test code for cliend
-// Route::get('/test_clientcontact', [clientController::class, 'test_c_cont']);
-// Route::post('/inset_testc_contact', [clientController::class, 'insert_test_clientcontact']);
+Route::get('/test_clientcontact', [clientController::class, 'test_c_cont']);
+Route::post('/inset_testc_contact', [clientController::class, 'insert_test_clientcontact']);
 
 //viewclient
 Route::get('/viewclient', [clientController::class, 'viewclientshow']);
