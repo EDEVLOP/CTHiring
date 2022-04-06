@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 29, 2022 at 04:18 PM
+-- Generation Time: Apr 02, 2022 at 07:08 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -6008,51 +6008,35 @@ CREATE TABLE `clients` (
 --
 
 INSERT INTO `clients` (`id`, `client_name`, `mobile`, `email`, `door_no`, `street_name`, `pincode`, `area_name`, `is_approve`, `approved_by`, `approve_date`, `remarks`, `address`, `is_inactive`, `status`, `is_deleted`, `modified_by`, `created_by`, `crm_id`, `city_id`, `state_id`, `district_id`, `created_at`, `updated_at`) VALUES
-(1, 'jyoti', '8917394301', NULL, '10', 'vihar', '7555034', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, NULL, 'Y', NULL, NULL, '3', 676, 0, 0, '2022-03-02 04:12:10', '2022-03-02 04:12:10'),
-(2, 'Clio Evans', '+1 (795) 914-9712', NULL, 'Provident est exer', 'Flavia Lester', 'Molestiae non id aut', 'Voluptatem corrupti', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '4', 2569, 22, 308, '2022-03-03 06:19:44', '2022-03-03 06:19:44'),
-(3, 'Gisela Johnson', '+1 (923) 823-9732', NULL, 'Delectus esse est d', 'Renee Flynn', 'Iure impedit non vo', 'Quis dignissimos pro', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2', NULL, 33, NULL, '2022-03-03 06:51:11', '2022-03-03 06:51:11'),
-(4, 'utama', '+1 (928) 807-4935', NULL, 'Suscipit iusto commo', 'Morgan Clayton', 'Dicta velit vero cor', 'Aut harum quo et dol', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '4', NULL, 20, NULL, '2022-03-03 06:53:53', '2022-03-03 06:53:53'),
-(5, 'Cameron Barlow', '+1 (545) 656-2573', NULL, 'In placeat pariatur', 'Ian Greer', 'Est voluptatem ipsa', 'Sunt eu ut vel accu', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', 4980, 2, 567, '2022-03-03 07:11:47', '2022-03-03 07:11:47'),
-(6, 'Cameron Barlow', '+1 (545) 656-2573', NULL, 'In placeat pariatur', 'Ian Greer', 'Est voluptatem ipsa', 'Sunt eu ut vel accu', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', 4980, 2, 567, '2022-03-03 07:12:33', '2022-03-03 07:12:33'),
-(7, 'Cameron Barlow', '+1 (545) 656-2573', NULL, 'In placeat pariatur', 'Ian Greer', 'Est voluptatem ipsa', 'Sunt eu ut vel accu', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', NULL, 2, NULL, '2022-03-03 07:12:38', '2022-03-03 07:12:38'),
-(8, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:15:46', '2022-03-03 07:15:46'),
-(9, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:16:11', '2022-03-03 07:16:11'),
-(10, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:18:46', '2022-03-03 07:18:46'),
-(11, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:19:11', '2022-03-03 07:19:11'),
-(12, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:20:01', '2022-03-03 07:20:01'),
-(13, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:20:16', '2022-03-03 07:20:16'),
-(14, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:22:04', '2022-03-03 07:22:04'),
-(15, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:22:40', '2022-03-03 07:22:40'),
-(16, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:24:35', '2022-03-03 07:24:35'),
-(17, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:25:10', '2022-03-03 07:25:10'),
-(18, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:25:48', '2022-03-03 07:25:48'),
-(19, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:26:53', '2022-03-03 07:26:53'),
-(20, 'Brittany Joseph', '+1 (489) 313-1584', NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 11, NULL, '2022-03-03 07:27:29', '2022-03-03 07:27:29'),
-(21, 'utaam', '8917394301', NULL, '15', 'vihar', '756098', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2', 6053, 2, 569, '2022-03-03 07:56:17', '2022-03-03 07:56:17'),
-(22, 'utaam', '8917394301', NULL, '15', 'vihar', '756098', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2', NULL, 2, NULL, '2022-03-03 07:58:27', '2022-03-03 07:58:27'),
-(23, 'Kylan Reynolds', '+1 (308) 762-6672', NULL, 'Eaque dolore officii', 'Blaze Rich', 'Pariatur Quis numqu', 'Eu voluptate irure e', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-03-03 08:18:17', '2022-03-03 08:18:17'),
-(24, 'Kylan Reynolds', '+1 (308) 762-6672', NULL, 'Eaque dolore officii', 'Blaze Rich', 'Pariatur Quis numqu', 'Eu voluptate irure e', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-03-03 08:40:27', '2022-03-03 08:40:27'),
-(25, 'Kylan Reynolds', '+1 (308) 762-6672', NULL, 'Eaque dolore officii', 'Blaze Rich', 'Pariatur Quis numqu', 'Eu voluptate irure e', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-03-03 08:40:37', '2022-03-03 08:40:37'),
-(26, 'Kylan Reynolds', '+1 (308) 762-6672', NULL, 'Eaque dolore officii', 'Blaze Rich', 'Pariatur Quis numqu', 'Eu voluptate irure e', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-03-03 08:41:28', '2022-03-03 08:41:28'),
-(27, 'Kylan Reynolds', '+1 (308) 762-6672', NULL, 'Eaque dolore officii', 'Blaze Rich', 'Pariatur Quis numqu', 'Eu voluptate irure e', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-03-03 08:42:16', '2022-03-03 08:42:16'),
-(28, 'Kylan Reynolds', '+1 (308) 762-6672', NULL, 'Eaque dolore officii', 'Blaze Rich', 'Pariatur Quis numqu', 'Eu voluptate irure e', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-03-03 08:42:57', '2022-03-03 08:42:57'),
-(29, 'Kylan Reynolds', '+1 (308) 762-6672', NULL, 'Eaque dolore officii', 'Blaze Rich', 'Pariatur Quis numqu', 'Eu voluptate irure e', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-03-03 08:43:33', '2022-03-03 08:43:33'),
-(30, 'Audra Workman', '+1 (858) 894-4472', NULL, 'Voluptas ut nostrum', 'Alice Olson', 'Accusamus a omnis iu', 'Error possimus eum', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '4', NULL, 8, NULL, '2022-03-03 08:44:54', '2022-03-03 08:44:54'),
-(31, 'Hu Rocha', '+1 (893) 509-2442', NULL, 'Dolores id ipsa des', 'Aileen Thomas', 'Qui eius maiores lau', 'Sunt nulla consectet', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '4', 2818, 4, 335, '2022-03-03 08:45:49', '2022-03-03 08:45:49'),
-(32, 'Yetta Beard', '+1 (807) 432-4091', NULL, 'Aliquip veniam esse', 'Vera Palmer', 'Incididunt qui labor', 'Aute esse eum commo', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2', 2345, 3, 281, '2022-03-03 08:47:09', '2022-03-03 08:47:09'),
-(33, 'Jena Wilson', '+1 (147) 159-5995', NULL, 'Eius voluptate sit', 'Mercedes Kramer', 'Delectus numquam om', 'Eligendi voluptas ve', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 3817, 26, 406, '2022-03-03 08:48:19', '2022-03-03 08:48:19'),
-(34, 'Mallory Farmer', '+1 (762) 973-7165', NULL, 'Similique occaecat v', 'Erich Clark', 'Est velit sit adipis', 'Mollit aut aliquid i', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', 4369, 20, 454, '2022-03-17 02:31:45', '2022-03-17 02:31:45'),
-(35, 'prasanta', '+1 (762) 817-2756', NULL, 'Deleniti in consequu', 'Leroy Richardson', 'Voluptates in eum ip', 'Et voluptas dolor si', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '4', 2595, 24, 322, '2022-03-17 03:47:49', '2022-03-17 03:47:49'),
-(36, 'Adrienne Simon', '+1 (151) 102-8632', NULL, 'Nam quae tempor temp', 'Vera Valencia', 'Non voluptates tempo', 'Ut reiciendis enim q', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '4', NULL, 22, NULL, '2022-03-17 03:51:28', '2022-03-17 03:51:28'),
-(37, 'Adrienne Simon', '+1 (151) 102-8632', NULL, 'Nam quae tempor temp', 'Vera Valencia', 'Non voluptates tempo', 'Ut reiciendis enim q', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '4', 2583, 24, 317, '2022-03-17 03:52:25', '2022-03-17 03:52:25'),
-(38, 'Adrienne Simon', '+1 (151) 102-8632', NULL, 'Nam quae tempor temp', 'Vera Valencia', 'Non voluptates tempo', 'Ut reiciendis enim q', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '4', 3817, 26, 406, '2022-03-17 03:53:18', '2022-03-17 03:53:18'),
-(39, 'Bethany Frederick', '+1 (991) 236-4645', NULL, 'Animi incidunt adi', 'Derek Sweet', 'Et et non rerum dolo', 'Nobis fuga Adipisic', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2', 3222, 16, 383, '2022-03-17 03:56:05', '2022-03-17 03:56:05'),
-(40, 'Jaime Mcbride', '8917394301', NULL, '233', 'Hollee Summers', 'Emery Hart', 'Rerum qui dolor offi', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 2024, 5, 241, '2022-03-29 00:34:42', '2022-03-29 00:34:42'),
-(41, 'Jaime Mcbride', '8917394301', NULL, '233', 'Hollee Summers', 'Emery Hart', 'Rerum qui dolor offi', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 2024, 5, 241, '2022-03-29 00:38:15', '2022-03-29 00:38:15'),
-(42, 'Jaime Mcbride', '8917394301', NULL, '233', 'Hollee Summers', 'Emery Hart', 'Rerum qui dolor offi', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 2024, 5, 241, '2022-03-29 00:38:33', '2022-03-29 00:38:33'),
-(43, 'Jaime Mcbride', '8917394301', NULL, '233', 'Hollee Summers', 'Emery Hart', 'Rerum qui dolor offi', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 2024, 5, 241, '2022-03-29 00:39:27', '2022-03-29 00:39:27'),
-(44, 'Jaime Mcbride', '8917394301', NULL, '233', 'Hollee Summers', 'Emery Hart', 'Rerum qui dolor offi', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 2024, 5, 241, '2022-03-29 00:46:30', '2022-03-29 00:46:30'),
-(45, 'Jaime Mcbride', '8917394301', NULL, '233', 'Hollee Summers', 'Emery Hart', 'Rerum qui dolor offi', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 2024, 5, 241, '2022-03-29 00:47:35', '2022-03-29 00:47:35');
+(1, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 3649, 26, 417, '2022-04-02 05:33:50', '2022-04-02 05:33:50'),
+(2, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 3649, 26, 417, '2022-04-02 05:34:37', '2022-04-02 05:34:37'),
+(3, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 3649, 26, 417, '2022-04-02 05:36:55', '2022-04-02 05:36:55'),
+(4, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', 3649, 26, 417, '2022-04-02 05:44:52', '2022-04-02 05:44:52'),
+(5, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-04-02 05:46:40', '2022-04-02 05:46:40'),
+(6, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-04-02 05:51:05', '2022-04-02 05:51:05'),
+(7, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-04-02 05:52:27', '2022-04-02 05:52:27'),
+(8, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-04-02 05:52:45', '2022-04-02 05:52:45'),
+(9, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-04-02 05:53:08', '2022-04-02 05:53:08'),
+(10, 'wipro', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 26, NULL, '2022-04-02 05:54:16', '2022-04-02 05:54:16'),
+(11, 'wiproooooooooooaaaa', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', 2788, 4, 337, '2022-04-02 06:09:37', '2022-04-02 06:09:37'),
+(12, 'wiproooooooooooaaaa', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', 2788, 4, 337, '2022-04-02 06:43:06', '2022-04-02 06:43:06'),
+(13, 'wiproooooooooooaaaa', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', 2788, 4, 337, '2022-04-02 06:50:26', '2022-04-02 06:50:26'),
+(14, 'wiproooooooooooaaaa', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', 2788, 4, 337, '2022-04-02 06:50:44', '2022-04-02 06:50:44'),
+(15, 'wiproooooooooooaaaa', '7766889901', NULL, '305', 'bbsr', '755039', 'bbsr', 0, NULL, NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', 2788, 4, 337, '2022-04-02 06:52:14', '2022-04-02 06:52:14'),
+(16, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:54:12', '2022-04-02 06:54:12'),
+(17, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:55:12', '2022-04-02 06:55:12'),
+(18, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:55:48', '2022-04-02 06:55:48'),
+(19, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:56:03', '2022-04-02 06:56:03'),
+(20, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:56:49', '2022-04-02 06:56:49'),
+(21, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:57:28', '2022-04-02 06:57:28'),
+(22, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:57:34', '2022-04-02 06:57:34'),
+(23, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:57:45', '2022-04-02 06:57:45'),
+(24, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:58:21', '2022-04-02 06:58:21'),
+(25, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:58:32', '2022-04-02 06:58:32'),
+(26, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:59:27', '2022-04-02 06:59:27'),
+(27, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 06:59:36', '2022-04-02 06:59:36'),
+(28, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 07:01:11', '2022-04-02 07:01:11'),
+(29, 'Xyla Melton', 'Ginger Bruce', NULL, 'Jena Whitney', 'Pamela Workman', 'Rhonda Copeland', 'Veniam perspiciatis', 0, NULL, NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', NULL, 1, NULL, '2022-04-02 07:01:25', '2022-04-02 07:01:25');
 
 -- --------------------------------------------------------
 
@@ -6076,15 +6060,15 @@ CREATE TABLE `client_contacts` (
   `remarks` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `is_inactive` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `status` tinyint(4) NOT NULL,
+  `status` tinyint(4) DEFAULT NULL,
   `is_deleted` enum('Y','N') COLLATE utf8mb4_unicode_ci NOT NULL,
   `modified_by` tinyint(4) DEFAULT NULL,
   `created_by` tinyint(4) DEFAULT NULL,
   `city_id` varchar(4) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `state_id` varchar(4) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `district_id` varchar(4) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -6092,22 +6076,16 @@ CREATE TABLE `client_contacts` (
 --
 
 INSERT INTO `client_contacts` (`id`, `contact_name`, `client_id`, `mobile`, `email`, `designation`, `password`, `door_no`, `street_name`, `pincode`, `area_name`, `approve_date`, `remarks`, `address`, `is_inactive`, `status`, `is_deleted`, `modified_by`, `created_by`, `city_id`, `state_id`, `district_id`, `created_at`, `updated_at`) VALUES
-(1, NULL, 19, NULL, NULL, NULL, NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, NULL, '11', NULL, '2022-03-03 07:26:53', '2022-03-03 07:26:53'),
-(2, NULL, 20, NULL, NULL, NULL, NULL, 'Voluptates at dolore', 'Xyla Winters', 'Cillum quia illo exe', 'Inventore deleniti d', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, NULL, '11', NULL, '2022-03-03 07:27:29', '2022-03-03 07:27:29'),
-(3, NULL, 22, NULL, NULL, NULL, NULL, '15', 'vihar', '756098', 'bbsr', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, NULL, '2', NULL, '2022-03-03 07:58:27', '2022-03-03 07:58:27'),
-(4, 'Pariatur Quis numqu', 28, 'Pariatur Quis numqu', 'Pariatur Quis numqu', 'Pariatur Quis numqu', NULL, 'Pariatur Quis numqu', 'Pariatur Quis numqu', 'Pariatur Quis numqu', 'Pariatur Quis numqu', NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:42:57', '2022-03-03 08:42:57'),
-(5, 'Pariatur Quis numqu', 29, 'Pariatur Quis numqu', 'Pariatur Quis numqu', 'Pariatur Quis numqu', NULL, 'Pariatur Quis numqu', 'Pariatur Quis numqu', 'Pariatur Quis numqu', 'Pariatur Quis numqu', NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:43:33', '2022-03-03 08:43:33'),
-(6, 'Qui eius maiores lau', 31, 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', NULL, 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:45:49', '2022-03-03 08:45:49'),
-(7, 'Qui eius maiores lau', 31, 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', NULL, 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:45:49', '2022-03-03 08:45:49'),
-(8, 'Qui eius maiores lau', 31, 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', NULL, 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:45:49', '2022-03-03 08:45:49'),
-(9, 'Qui eius maiores lau', 31, 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', NULL, 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', 'Qui eius maiores lau', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:45:49', '2022-03-03 08:45:49'),
-(10, 'Nisa puspita', 32, 'Incididunt qui labor', 'Incididunt qui labor', 'Incididunt qui labor', NULL, 'Incididunt qui labor', 'Incididunt qui labor', 'Incididunt qui labor', 'Incididunt qui labor', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:47:09', '2022-03-03 08:47:09'),
-(11, 'Puspita', 32, 'Incididunt qui labor', 'Incididunt qui labor', 'Incididunt qui labor', NULL, 'Incididunt qui labor', 'Incididunt qui labor', 'Incididunt qui labor', 'Incididunt qui labor', NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:47:09', '2022-03-03 08:47:09'),
-(12, 'Delectus numquam om', 33, 'Delectus numquam om', 'Delectus numquam om', 'Delectus numquam om', NULL, 'Delectus numquam om', 'Delectus numquam om', 'Delectus numquam om', 'Delectus numquam om', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:48:19', '2022-03-03 08:48:19'),
-(13, 'Delectus numquam om', 33, 'Delectus numquam om', 'Delectus numquam om', 'Delectus numquam om', NULL, 'Delectus numquam om', 'Delectus numquam om', 'Delectus numquam om', 'Delectus numquam om', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1', '1', '1', '2022-03-03 08:48:19', '2022-03-03 08:48:19'),
-(14, 'Est velit sit adipis', 34, 'Est velit sit adipis', 'Est velit sit adipis', 'Est velit sit adipis', NULL, 'Est velit sit adipis', 'Est velit sit adipis', 'Est velit sit adipis', 'Est velit sit adipis', NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '716', '15', '37', '2022-03-17 02:31:45', '2022-03-17 02:31:45'),
-(15, 'Voluptates in eum ip', 35, 'Voluptates in eum ip', 'Voluptates in eum ip', 'Voluptates in eum ip', NULL, 'Voluptates in eum ip', 'Voluptates in eum ip', 'Voluptates in eum ip', 'Voluptates in eum ip', NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '998', '34', '92', '2022-03-17 03:47:49', '2022-03-17 03:47:49'),
-(16, 'Non voluptates tempo', 38, 'Non voluptates tempo', 'Non voluptates tempo', 'Non voluptates tempo', NULL, 'Non voluptates tempo', 'Non voluptates tempo', '12345', 'Non voluptates tempo', NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '2944', '35', '363', '2022-03-17 03:53:18', '2022-03-17 03:53:18');
+(1, 'Hadassah Wiley', 12, '+1 (896) 156-4871', 'loxoho@mailinator.com', '+1 (117) 174-6263', NULL, '+1 (862) 122-5613', 'Henry Hays', '+1 (228) 146-2383', '+1 (658) 535-9446', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2702', '3', '199', '2022-04-02 06:43:06', '2022-04-02 06:43:06'),
+(2, 'Brynn Bass', 12, '+1 (577) 224-2999', 'kiveke@mailinator.com', '+1 (782) 375-5062', NULL, '+1 (245) 433-9813', 'Frances Pierce', '+1 (683) 254-9013', '+1 (476) 353-6049', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2927', '15', '289', '2022-04-02 06:43:06', '2022-04-02 06:43:06'),
+(3, 'Hadassah Wiley', 15, '+1 (896) 156-4871', 'loxoho@mailinator.com', '+1 (117) 174-6263', NULL, '+1 (862) 122-5613', 'Henry Hays', '+1 (228) 146-2383', '+1 (658) 535-9446', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2702', '3', '199', '2022-04-02 06:52:14', '2022-04-02 06:52:14'),
+(4, 'Brynn Bass', 15, '+1 (577) 224-2999', 'kiveke@mailinator.com', '+1 (782) 375-5062', NULL, '+1 (245) 433-9813', 'Frances Pierce', '+1 (683) 254-9013', '+1 (476) 353-6049', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2927', '15', '289', '2022-04-02 06:52:14', '2022-04-02 06:52:14'),
+(5, 'Stacy Sargent', 16, '+1 (891) 326-6003', 'tasej@mailinator.com', '+1 (786) 176-4176', NULL, '+1 (499) 536-4668', 'Adele Frye', '+1 (716) 677-3667', '+1 (151) 621-8592', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '4247', '16', '337', '2022-04-02 06:54:12', '2022-04-02 06:54:12'),
+(6, 'Hayfa Moon', 29, '+1 (694) 468-1243', 'lalofom@mailinator.com', '+1 (909) 452-8163', NULL, '+1 (134) 234-8622', 'Karly Molina', '+1 (194) 667-1116', '+1 (134) 493-9753', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '2230', '32', '172', '2022-04-02 07:01:25', '2022-04-02 07:01:25'),
+(7, 'Julie Kirkland', 29, '+1 (644) 293-2558', 'bopeqed@mailinator.com', '+1 (199) 837-3184', NULL, '+1 (668) 899-9534', 'Nehru Vaughan', '+1 (697) 285-8659', '+1 (663) 302-2553', NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '3924', '15', '128', '2022-04-02 07:01:25', '2022-04-02 07:01:25'),
+(8, 'Mollie Gibbs', 29, '+1 (282) 572-1553', 'vegin@mailinator.com', '+1 (845) 813-4332', NULL, '+1 (649) 705-3312', 'Liberty Yang', '+1 (603) 278-8735', '+1 (703) 918-9622', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '4547', '9', '553', '2022-04-02 07:01:25', '2022-04-02 07:01:25'),
+(9, 'Leslie Nunez', 29, '+1 (198) 976-3308', 'conysyrul@mailinator.com', '+1 (466) 734-3081', NULL, '+1 (883) 572-6768', 'Jenette Armstrong', '+1 (491) 322-4346', '+1 (356) 849-6726', NULL, NULL, NULL, NULL, 2, 'Y', NULL, NULL, '3286', '13', '562', '2022-04-02 07:01:25', '2022-04-02 07:01:25'),
+(10, 'Deborah Callahan', 29, '+1 (113) 998-5489', 'pokumyhur@mailinator.com', '+1 (629) 596-9445', NULL, '+1 (531) 465-2457', 'Dean Silva', '+1 (579) 106-5387', '+1 (164) 425-8631', NULL, NULL, NULL, NULL, 1, 'Y', NULL, NULL, '1633', '30', '207', '2022-04-02 07:01:25', '2022-04-02 07:01:25');
 
 -- --------------------------------------------------------
 
@@ -6932,7 +6910,25 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (11, '2022_02_26_100904_create_addclients_table', 10),
 (12, '2022_03_03_073630_create_client_contacts_table', 11),
 (13, '2022_03_07_052320_create_functional_areas_table', 12),
-(14, '2022_03_07_072000_create_industries_table', 13);
+(14, '2022_03_07_072000_create_industries_table', 13),
+(15, '2022_04_02_124245_create_cities_table', 0),
+(16, '2022_04_02_124245_create_client_contacts_table', 0),
+(17, '2022_04_02_124245_create_client_designations_table', 0),
+(18, '2022_04_02_124245_create_client_location_table', 0),
+(19, '2022_04_02_124245_create_clients_table', 0),
+(20, '2022_04_02_124245_create_districts_table', 0),
+(21, '2022_04_02_124245_create_functional_areas_table', 0),
+(22, '2022_04_02_124245_create_industries_table', 0),
+(23, '2022_04_02_124245_create_location_table', 0),
+(24, '2022_04_02_124245_create_msgs_table', 0),
+(25, '2022_04_02_124245_create_otpstores_table', 0),
+(26, '2022_04_02_124245_create_password_resets_table', 0),
+(27, '2022_04_02_124245_create_positions_table', 0),
+(28, '2022_04_02_124245_create_qualifications_table', 0),
+(29, '2022_04_02_124245_create_roles_table', 0),
+(30, '2022_04_02_124245_create_states_table', 0),
+(31, '2022_04_02_124245_create_user_designations_table', 0),
+(32, '2022_04_02_124245_create_users_table', 0);
 
 -- --------------------------------------------------------
 
@@ -6976,7 +6972,7 @@ CREATE TABLE `otpstores` (
 --
 
 INSERT INTO `otpstores` (`id`, `otp`, `mobile_no`, `is_deleted`, `created_at`, `updated_at`) VALUES
-(1, '185355', '8895274919', 'N', '2022-03-28 00:17:01', '2022-03-28 01:40:18'),
+(1, '163901', '8895274919', 'N', '2022-03-28 00:17:01', '2022-04-02 04:13:59'),
 (2, '299226', '4455778899', 'N', '2022-03-28 06:21:55', '2022-03-28 06:21:55');
 
 -- --------------------------------------------------------
@@ -6999,17 +6995,21 @@ CREATE TABLE `password_resets` (
 
 CREATE TABLE `positions` (
   `id` bigint(255) NOT NULL,
+  `position_id_totalopeningclient` int(255) DEFAULT NULL,
   `client_name` varchar(255) DEFAULT NULL,
   `spoc_name` varchar(255) DEFAULT NULL,
   `job_title` varchar(255) DEFAULT NULL,
   `job_location` varchar(200) DEFAULT NULL,
   `job_code` varchar(200) DEFAULT NULL,
-  `experience` varchar(100) DEFAULT NULL,
-  `annual_ctc` varchar(100) DEFAULT NULL,
+  `min_experience` varchar(100) DEFAULT NULL,
+  `max_experience` varchar(255) DEFAULT NULL,
+  `annual_ctc_min` varchar(100) DEFAULT NULL,
+  `annual_ctc_max` varchar(255) DEFAULT NULL,
   `qualification` varchar(200) DEFAULT NULL,
   `functional_area` varchar(200) DEFAULT NULL,
   `industry` varchar(200) DEFAULT NULL,
-  `age` varchar(100) DEFAULT NULL,
+  `age_min` varchar(100) DEFAULT NULL,
+  `age_max` varchar(255) DEFAULT NULL,
   `gender` varchar(100) DEFAULT NULL,
   `technicalskils` varchar(100) DEFAULT NULL,
   `behaviour_skils` varchar(100) DEFAULT NULL,
@@ -7023,6 +7023,8 @@ CREATE TABLE `positions` (
   `resume_type` varchar(100) DEFAULT NULL,
   `project_type` varchar(200) DEFAULT NULL,
   `publish_website` varchar(200) DEFAULT NULL,
+  `job_description_ckediter` longtext DEFAULT NULL,
+  `file_attachment` varchar(255) DEFAULT NULL,
   `openingfield_hiddendata` varchar(100) DEFAULT NULL,
   `multipul_nameposition_hidden` varchar(100) DEFAULT NULL,
   `status` int(100) DEFAULT NULL,
@@ -7035,13 +7037,8 @@ CREATE TABLE `positions` (
 -- Dumping data for table `positions`
 --
 
-INSERT INTO `positions` (`id`, `client_name`, `spoc_name`, `job_title`, `job_location`, `job_code`, `experience`, `annual_ctc`, `qualification`, `functional_area`, `industry`, `age`, `gender`, `technicalskils`, `behaviour_skils`, `total_opening`, `recruiters`, `crm`, `billable_value`, `total_billable`, `joining_date`, `resume_contact`, `resume_type`, `project_type`, `publish_website`, `openingfield_hiddendata`, `multipul_nameposition_hidden`, `status`, `is_deleted`, `created_at`, `updated_at`) VALUES
-(1, '33', '12', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '3', ' HI', NULL, 'N', '2022-03-14 07:00:17', '2022-03-14 07:00:17'),
-(2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2', ' HI', NULL, 'N', '2022-03-14 07:01:24', '2022-03-14 07:01:24'),
-(3, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2', 'AK', NULL, 'N', '2022-03-14 07:02:49', '2022-03-14 07:02:49'),
-(4, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2', ' HI', NULL, 'N', '2022-03-14 07:02:49', '2022-03-14 07:02:49'),
-(5, '32', '10', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '3', 'OR', NULL, 'N', '2022-03-14 07:12:35', '2022-03-14 07:12:35'),
-(6, '32', '10', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '3', 'WA', NULL, 'N', '2022-03-14 07:12:35', '2022-03-14 07:12:35');
+INSERT INTO `positions` (`id`, `position_id_totalopeningclient`, `client_name`, `spoc_name`, `job_title`, `job_location`, `job_code`, `min_experience`, `max_experience`, `annual_ctc_min`, `annual_ctc_max`, `qualification`, `functional_area`, `industry`, `age_min`, `age_max`, `gender`, `technicalskils`, `behaviour_skils`, `total_opening`, `recruiters`, `crm`, `billable_value`, `total_billable`, `joining_date`, `resume_contact`, `resume_type`, `project_type`, `publish_website`, `job_description_ckediter`, `file_attachment`, `openingfield_hiddendata`, `multipul_nameposition_hidden`, `status`, `is_deleted`, `created_at`, `updated_at`) VALUES
+(11, NULL, '35', '15', 'laravel', 'bbsr', 'CT/01/2022', '5', '8', '2Lakhs', '5Lakhs', '1', '2', '2', '20', '25', 'Male', '\"html,css,laravel\"', '5', NULL, NULL, '1', '100', NULL, '04/01/2022', 'yes', 'Snapshot', 'rpo', 'yes', '<p>hyyyy</p>', NULL, '5', '11', NULL, 'N', '2022-04-01 13:02:19', '2022-04-01 13:02:19');
 
 -- --------------------------------------------------------
 
@@ -7202,7 +7199,9 @@ INSERT INTO `users` (`id`, `fname`, `lname`, `mobile`, `gender`, `status`, `user
 (6, 'Rosalin', 'biswal', '8917546702', 'female', 1, NULL, NULL, NULL, 'rosi@gmail.com', 'rrrrrrrrr', '<!DOCTYPE html>\r\n<html>\r\n<head>\r\n</head>\r\n<body>\r\n<p>rosi</p>\r\n</body>\r\n</html>', 'N', '5', '5', '1647857594.jpg', '2022-03-21 10:13:14', NULL, NULL, NULL, 5, 2, NULL, NULL, '2022-03-21 04:43:14', '2022-03-21 04:43:14'),
 (7, 'Manas', 'Samal', '8917540985', 'male', 1, NULL, NULL, NULL, 'Manas@gmail.com', 'tttttttt', '<!DOCTYPE html>\r\n<html>\r\n<head>\r\n</head>\r\n<body>\r\n<p>m4samal</p>\r\n</body>\r\n</html>', 'N', '5', '5', '1647857896.jpg', '2022-03-21 10:18:16', NULL, NULL, NULL, 6, 2, NULL, NULL, '2022-03-21 04:48:16', '2022-03-21 04:48:16'),
 (8, 'Akash', 'Nayak', '7894567823', 'male', 1, NULL, NULL, NULL, 'A@gmail.com', 'oooooooooo', '<!DOCTYPE html>\r\n<html>\r\n<head>\r\n</head>\r\n<body>\r\n<p>akash</p>\r\n</body>\r\n</html>', 'N', '1', '1', '1647858121.jpg', '2022-03-21 10:22:01', NULL, NULL, NULL, 6, 3, NULL, NULL, '2022-03-21 04:52:01', '2022-03-21 04:52:01'),
-(9, 'Aryanaaaa', 'Nayak', '7654395689', 'male', 1, NULL, NULL, NULL, 'Aryan@gmail.com', 'fffgggg', '<!DOCTYPE html>\r\n<html>\r\n<head>\r\n</head>\r\n<body>\r\n<p>aryan</p>\r\n</body>\r\n</html>', 'N', '5', '5', '1647929275.jpg', '2022-03-22 05:48:46', 1, 1, NULL, 7, 6, NULL, NULL, '2022-03-22 00:18:46', '2022-03-22 00:37:55');
+(9, 'Aryanaaaa', 'Nayak', '7654395689', 'male', 1, NULL, NULL, NULL, 'Aryan@gmail.com', 'fffgggg', '<!DOCTYPE html>\r\n<html>\r\n<head>\r\n</head>\r\n<body>\r\n<p>aryan</p>\r\n</body>\r\n</html>', 'N', '5', '5', '1647929275.jpg', '2022-03-22 05:48:46', 1, 1, NULL, 7, 6, NULL, NULL, '2022-03-22 00:18:46', '2022-03-22 00:37:55'),
+(10, 'arpita', 'biswal', '8945678902', 'female', 1, NULL, NULL, NULL, 'arpita@gmail.com', 'xyz', '<!DOCTYPE html>\r\n<html>\r\n<head>\r\n</head>\r\n<body>\r\n<p>arpita</p>\r\n</body>\r\n</html>', 'N', '5', '5', '1648811650.jpg', '2022-04-01 11:14:10', NULL, NULL, NULL, 5, 8, NULL, NULL, '2022-04-01 05:44:10', '2022-04-01 05:44:10'),
+(11, 'banashree', 'nayak', '8945674389', 'female', 1, NULL, NULL, NULL, 'bana@gmail.com', 'sssss', '<!DOCTYPE html>\r\n<html>\r\n<head>\r\n</head>\r\n<body>\r\n<p>bana</p>\r\n</body>\r\n</html>', 'N', '1', '1', '1648811750.jpg', '2022-04-01 11:15:50', NULL, NULL, NULL, 5, 8, NULL, NULL, '2022-04-01 05:45:50', '2022-04-01 05:45:50');
 
 -- --------------------------------------------------------
 
@@ -7354,13 +7353,13 @@ ALTER TABLE `cities`
 -- AUTO_INCREMENT for table `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `client_contacts`
 --
 ALTER TABLE `client_contacts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `client_designations`
@@ -7402,7 +7401,7 @@ ALTER TABLE `location`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `msgs`
@@ -7420,7 +7419,7 @@ ALTER TABLE `otpstores`
 -- AUTO_INCREMENT for table `positions`
 --
 ALTER TABLE `positions`
-  MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `qualifications`
@@ -7444,7 +7443,7 @@ ALTER TABLE `states`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `user_designations`

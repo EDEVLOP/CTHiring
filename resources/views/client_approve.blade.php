@@ -1,34 +1,5 @@
 @extends('layout.admin_layout')
 @section('content')
-<style>
-body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
-    margin-left: 0px;
-}
-
-.pd_0 {
-    padding: 0px;
-}
-
-.pd_15 {
-    padding: 15px 24px;
-}
-
-.mar {
-    margin: -23px 0 10px 0px !important;
-}
-
-.pd_14 {
-    padding: 7px 24px !important;
-}
-
-.mb_3 {
-    margin-bottom: 3px !important;
-}
-
-.wd_37 th {
-    width: 37%;
-}
-</style>
 <div class="app-content content">
     <div class="content-wrapper">
         <div class="content-header row">
@@ -88,13 +59,11 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
                                         <th>#</th>
                                         <th>Client Name</th>
                                         <th>Contact</th>
-                                        <th>Position</th>
                                         <th>City</th>
-                                        <th>District</th>
-
+                                        <th>State</th>
                                         <th>CRM</th>
                                         <th>Status</th>
-
+                                        <th>Approved By</th>
                                         <th>Created By</th>
                                         <th>Created On</th>
                                         <th>Modified At</th>
@@ -102,33 +71,24 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
                                     </tr>
                                 </thead>
 
-
                                 <tbody>
                                     @php
                                     $i=1;
                                     @endphp
                                     @foreach($view as $loc)
-                                    @php
-                                    if($loc->is_approve==1 or session('USER_ID')==$loc->created_by){
-                                    @endphp
+
                                     <tr>
                                         <td>{{ $i }}</td>
                                         <td data-toggle="tooltip" data-trigger="hover" data-placement="top"
-                                            data-title="click to view the details" style="text-align: left;">
-
-                                            <a
-                                                href="{{route('viewclient_details', ['id' => $loc->id])}}">{{$loc->client_name}}</a>
+                                            data-title="click to view the details" style="text-align: left;"><a
+                                                href="client_detail">{{$loc->client_name}}</a>
                                         </td>
-
-
-                                        <td style="text-align: left;"></td>
-
-                                        <td style="text-align: left;"></td>
+                                        <td style="text-align: left;">{{$loc->mobile}}</td>
 
                                         <td style="text-align: left;"> {{optional ($loc->citys)->name }}</td>
 
                                         <td style="text-align: left;"> {{optional ($loc->dist)->district_title }}</td>
-
+                                        <td style="text-align: left;">{{optional ($loc->state)->state_title }}</td>
                                         <!-- CRM Name Fetch -->
                                         <td style="text-align: left;">
                                             {{optional ($loc->client)->fname }} {{optional ($loc->client)->lname }}
@@ -150,11 +110,9 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
 
                                         <td>{{$loc->updated_at}}</td>
 
-                                        <td><a href="{{url('/edit_client',$loc->id)}}"><i
-                                                    class="ft-edit text-success"></i></a>
+                                        <td><a href="{{url('',$loc->id)}}"><i class="ft-edit text-success"></i></a>
 
-                                            <a href="{{url('/',$loc->id)}}" onclick="return confirm('Are you sure?')"><i
-                                                    class="ft-trash-2 ml-1 text-warning"></i></a>
+
                                         </td>
 
 
@@ -163,7 +121,7 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
                                     </tr>
                                     @php
                                     $i++;
-                                    }
+
                                     @endphp
 
                                     @endforeach
@@ -178,10 +136,9 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
                                         <th>#</th>
                                         <th>Client Name</th>
                                         <th>Contact</th>
-                                        <th>Position</th>
                                         <th>City</th>
                                         <th>District</th>
-
+                                        <th>State</th>
                                         <th>CRM</th>
                                         <th>Status</th>
                                         <th>Created By</th>
@@ -190,7 +147,6 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
                                         <th>Action</th>
                                     </tr>
                                 </tfoot>
-
 
                             </table>
                         </div>

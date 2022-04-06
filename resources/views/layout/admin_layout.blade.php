@@ -12,48 +12,54 @@
     <meta name="author" content="PIXINVENT">
     <title>CT Hiring
     </title>
-    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="{{asset('app-assets/images/ico/apple-icon-120.png')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('app-assets/images/ico/favicon.ico')}}">
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Quicksand:300,400,500,700"
         rel="stylesheet">
     <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
     <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/vendors.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/editors/tinymce/tinymce.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/vendors.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/editors/tinymce/tinymce.min.css')}}">
     <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/vendors.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/datatables.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/extensions/buttons.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/vendors.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{asset('app-assets/vendors/css/tables/datatable/datatables.min.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{asset('app-assets/vendors/css/tables/extensions/buttons.dataTables.min.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{asset('app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css')}}">
     <!-- END VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/icheck/icheck.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/js/bootstrap.min.js.map">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/validation/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/forms/icheck/icheck.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/js/bootstrap.min.js.map')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{asset('app-assets/css/plugins/forms/validation/form-validation.css')}}">
     <!-- END VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="wizard.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('wizard.css')}}">
 
     <!-- BEGIN MODERN CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/app.css')}}">
     <!-- END MODERN CSS-->
 
     <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu-modern.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/morris.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/fonts/simple-line-icons/style.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css"
+        href="{{asset('app-assets/css/core/menu/menu-types/vertical-menu-modern.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/core/colors/palette-gradient.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{asset('app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/charts/morris.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/fonts/simple-line-icons/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/core/colors/palette-gradient.css')}}">
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/wizard.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/selects/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/plugins/forms/wizard.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/forms/selects/select2.min.css')}}">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/datedropper.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/timedropper.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/extensions/datedropper.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/extensions/timedropper.min.css')}}">
 
 
     <!-- END Custom CSS-->
@@ -507,7 +513,7 @@
                     <ul class="menu-content">
                         <li><a class="menu-item" href="position" data-i18n="nav.dash.ecommerce">Create Positions</a>
                         </li>
-                        <li><a class="menu-item" href="#" data-i18n="nav.dash.ecommerce">View Positions</a>
+                        <li><a class="menu-item" href="positionview" data-i18n="nav.dash.ecommerce">View Positions</a>
                         </li>
                     </ul>
                 </li>
@@ -527,6 +533,9 @@
                         <li><a class="menu-item" href="client" data-i18n="nav.dash.ecommerce">Create Clients</a>
                         </li>
                         <li><a class="menu-item" href="viewclient" data-i18n="nav.dash.ecommerce">View Clients</a>
+                        </li>
+                        <li><a class="menu-item" href="approveclient" data-i18n="nav.dash.ecommerce">Approve
+                                Clients</a>
                         </li>
                     </ul>
                 </li>
@@ -645,44 +654,48 @@
         </p>
     </footer>
     <!-- BEGIN VENDOR JS-->
-    <script src="app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/vendors.min.js')}}" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="app-assets/vendors/js/charts/chart.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/charts/raphael-min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/charts/morris.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js" type="text/javascript"></script>
-    <script src="app-assets/data/jvector/visitor-data.js" type="text/javascript"></script>
-    <!-- END PAGE VENDOR JS-->
-    <script src="app-assets/vendors/js/tables/datatable/datatables.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/tables/datatable/dataTables.buttons.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/tables/datatable/buttons.bootstrap4.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/tables/jszip.min.js" type="text/javascript"></script>
-    <script src="app-assets/js/scripts/tables/datatables-extensions/datatable-button/datatable-html5.js"
+    <script src="{{asset('app-assets/vendors/js/charts/chart.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/charts/raphael-min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/charts/morris.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js')}}"
         type="text/javascript"></script>
-    <script src="app-assets/vendors/js/tables/pdfmake.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/tables/vfs_fonts.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/tables/buttons.html5.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/tables/buttons.print.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/tables/buttons.colVis.min.js" type="text/javascript"></script>
-    <script src="app-assets/js/scripts/modal/components-modal.js" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js')}}"
+        type="text/javascript"></script>
+    <script src="{{asset('app-assets/data/jvector/visitor-data.js')}}" type="text/javascript"></script>
+    <!-- END PAGE VENDOR JS-->
+    <script src="{{asset('app-assets/vendors/js/tables/datatable/datatables.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/tables/datatable/dataTables.buttons.min.js')}}" type="text/javascript">
+    </script>
+    <script src="{{asset('app-assets/vendors/js/tables/datatable/buttons.bootstrap4.min.js')}}" type="text/javascript">
+    </script>
+    <script src="{{asset('app-assets/vendors/js/tables/jszip.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/js/scripts/tables/datatables-extensions/datatable-button/datatable-html5.js')}}"
+        type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/tables/pdfmake.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/tables/vfs_fonts.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/tables/buttons.html5.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/tables/buttons.print.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/tables/buttons.colVis.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/js/scripts/modal/components-modal.js')}}" type="text/javascript"></script>
 
 
     <!-- BEGIN MODERN JS-->
-    <script src="app-assets/js/core/app-menu.js" type="text/javascript"></script>
-    <script src="app-assets/js/core/app.js" type="text/javascript"></script>
-    <script src="app-assets/js/scripts/customizer.js" type="text/javascript"></script>
+    <script src="{{asset('app-assets/js/core/app-menu.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/js/core/app.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/js/scripts/customizer.js')}}" type="text/javascript"></script>
     <!-- END MODERN JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/pages/dashboard-sales.js" type="text/javascript"></script>
+    <script src="{{asset('app-assets/js/scripts/pages/dashboard-sales.js')}}" type="text/javascript"></script>
 
     <!-- END PAGE LEVEL JS-->
-    <script src="app-assets/vendors/js/editors/tinymce/tinymce.js" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/editors/tinymce/tinymce.js')}}" type="text/javascript"></script>
 
-    <script src="app-assets/js/scripts/editors/editor-tinymce.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/js/extensions/jquery.steps.min.js"></script>
-    <script src="app-assets/js/scripts/forms/wizard-steps.min.js"></script>
+    <script src="{{asset('app-assets/js/scripts/editors/editor-tinymce.js')}}" type="text/javascript"></script>
+    <script src="{{asset('app-assets/vendors/js/extensions/jquery.steps.min.js')}}"></script>
+    <script src="{{asset('app-assets/js/scripts/forms/wizard-steps.min.js')}}"></script>
 
 
     <!-- for client blade page code -->

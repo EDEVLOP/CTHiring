@@ -4,44 +4,18 @@
 body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
     margin-left: 0px;
 }
-
-.pd_0 {
-    padding: 0px;
-}
-
-.pd_15 {
-    padding: 15px 24px;
-}
-
-.mar {
-    margin: -23px 0 10px 0px !important;
-}
-
-.pd_14 {
-    padding: 7px 24px !important;
-}
-
-.mb_3 {
-    margin-bottom: 3px !important;
-}
-
-.wd_37 th {
-    width: 37%;
-}
 </style>
 <div class="app-content content">
     <div class="content-wrapper">
         <div class="content-header row">
             <div class="content-header-left col-md-6 col-12 mb-2 breadcrumb-new">
-                <h3 class="content-header-title mb-0 d-inline-block">View Client</h3><br>
+                <h3 class="content-header-title mb-0 d-inline-block">Position</h3><br>
                 <div class="row breadcrumbs-top d-inline-block">
                     <div class="breadcrumb-wrapper col-12">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Settings</a>
+                            <li class="breadcrumb-item"><a href="#">Positions</a>
                             </li>
-                            <li class="breadcrumb-item"><a href="#">Branch</a>
-                            </li>
-                            <li class="breadcrumb-item active">View Client
+                            <li class="breadcrumb-item active">View Position
                             </li>
                         </ol>
                     </div>
@@ -68,7 +42,7 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title" id="basic-layout-tooltip">View Client</h4>
+                        <h4 class="card-title" id="basic-layout-tooltip">View Position</h4>
                         <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                         <div class="heading-elements">
                             <ul class="list-inline mb-0">
@@ -86,120 +60,108 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Client Name</th>
-                                        <th>Contact</th>
-                                        <th>Position</th>
-                                        <th>City</th>
-                                        <th>District</th>
-
+                                        <th>Job Title</th>
+                                        <th>Client</th>
+                                        <th>Total Openings</th>
                                         <th>CRM</th>
-                                        <th>Status</th>
+                                        <th>Recruiters</th>
+                                        <th>CV Sent</th>
+                                        <th>Joined</th>
 
                                         <th>Created By</th>
-                                        <th>Created On</th>
-                                        <th>Modified At</th>
-                                        <th>Action</th>
+                                        <th>Status</th>
+                                        <th>Created</th>
+                                        <th>Modified</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
-
 
                                 <tbody>
                                     @php
                                     $i=1;
                                     @endphp
                                     @foreach($view as $loc)
-                                    @php
-                                    if($loc->is_approve==1 or session('USER_ID')==$loc->created_by){
-                                    @endphp
+
                                     <tr>
                                         <td>{{ $i }}</td>
                                         <td data-toggle="tooltip" data-trigger="hover" data-placement="top"
-                                            data-title="click to view the details" style="text-align: left;">
+                                            data-title="click to view the details" style="text-align: left;"><a
+                                                href="">{{$loc->job_title}}</a></td>
+                                        <td style="text-align: left;">{{optional ($loc->client_na)->client_name }}</td>
 
-                                            <a
-                                                href="{{route('viewclient_details', ['id' => $loc->id])}}">{{$loc->client_name}}</a>
-                                        </td>
+                                        <td style="text-align: left;">{{$loc->total_opening}}</td>
 
-
-                                        <td style="text-align: left;"></td>
-
-                                        <td style="text-align: left;"></td>
-
-                                        <td style="text-align: left;"> {{optional ($loc->citys)->name }}</td>
-
-                                        <td style="text-align: left;"> {{optional ($loc->dist)->district_title }}</td>
-
-                                        <!-- CRM Name Fetch -->
                                         <td style="text-align: left;">
-                                            {{optional ($loc->client)->fname }} {{optional ($loc->client)->lname }}
+                                            {{optional ($loc->client_crm)->fname}}{{optional ($loc->client_crm)->lname}}
+                                        </td>
+                                        <td style="text-align: left;">
+                                            {{optional ($loc->client_requiter)->fname}}{{optional ($loc->client_requiter)->lname}}
                                         </td>
                                         <!-- CRM Name Fetch -->
+                                        <td style="text-align: left;"> </td>
 
-                                        @if ($loc->is_approve == 1)
-                                        <td><span class="badge badge-default badge-success">Approved</span></td>
 
+                                        <!-- CRM Name Fetch -->
+
+
+                                        <td> {{$loc->joining_date}}</td>
+
+
+
+                                        <td>{{optional ($loc->position_create)->fname}}{{optional ($loc->position_create)->lname}}
+                                        </td>
+
+
+                                        @if ($loc->status == 1)
+                                        <td><span class="badge badge-default badge-success">Active</span></td>
 
                                         @else
-                                        <td><span class="badge badge-default badge-warning">Pending</span> </td>
 
+                                        <td><span class="badge badge-default badge-danger">Inactive</span></td>
 
                                         @endif
 
-                                        <td>{{optional($loc->Use)->fname}}{{optional($loc->Use)->lname}}</td>
-                                        <td>{{ date('j F-Y', strtotime($loc->created_at)) }} </td>
-
+                                        <td>{{$loc->created_at}}</td>
                                         <td>{{$loc->updated_at}}</td>
-
-                                        <td><a href="{{url('/edit_client',$loc->id)}}"><i
-                                                    class="ft-edit text-success"></i></a>
-
-                                            <a href="{{url('/',$loc->id)}}" onclick="return confirm('Are you sure?')"><i
-                                                    class="ft-trash-2 ml-1 text-warning"></i></a>
+                                        <td>
+                                            <a href="">
+                                                <i class="ft-edit text-success"></i>
+                                            </a>
+                                            <a href="" onclick="return confirm('Are you sure?')">
+                                                <i class="ft-trash-2 ml-1 text-warning"></i>
+                                            </a>
                                         </td>
-
-
-
-
                                     </tr>
                                     @php
                                     $i++;
-                                    }
                                     @endphp
-
                                     @endforeach
+
                                 </tbody>
-
-
-
-
-
                                 <tfoot>
                                     <tr>
                                         <th>#</th>
-                                        <th>Client Name</th>
-                                        <th>Contact</th>
-                                        <th>Position</th>
-                                        <th>City</th>
-                                        <th>District</th>
-
+                                        <th>Job Title</th>
+                                        <th>Client</th>
+                                        <th>Total Openings</th>
                                         <th>CRM</th>
-                                        <th>Status</th>
+                                        <th>Recruiters</th>
+                                        <th>CV Sent</th>
+                                        <th>Joined</th>
+
                                         <th>Created By</th>
-                                        <th>Created At</th>
-                                        <th>Modified At</th>
-                                        <th>Action</th>
+                                        <th>Status</th>
+                                        <th>Created</th>
+                                        <th>Modified</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </tfoot>
-
-
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Form wizard with icon tabs section end -->
-
-
         </div>
     </div>
 

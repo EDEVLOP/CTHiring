@@ -163,6 +163,12 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="">Logo</label>
+                                                    <input type="file" class="form-control" name="file[]">
+                                                </div>
+                                            </div>
                                         </div>
                                         <span><input type="submit" name="submit" class="btn btn-primary f_right"
                                                 value="Next"></span>
