@@ -15,7 +15,7 @@ class PositionController extends Controller
     public function positionshow()
     {
         $client1 = client::all();
-        // $c_contactname = ClientContact::all();
+        //$c_contactname = ClientContact::all();
         $qualification1 = Qualification::all();
         $function_area1 = FunctionalArea::all();
         $industry1 = Industry::all();
@@ -63,7 +63,35 @@ class PositionController extends Controller
 
     public function position_inserts(Request $request)
     {
-        dd($request);
+        $request->input('name_position');
+        //  dd($request->name_position);
+        $temp_rec = explode(";", $request->name_position);
+        //dd($temp_rec[0]);
+        $count = (count($temp_rec) - 1);
+        // dd($count);
+        for ($i = 0; $i < $count; $i++) {
+            $p_rec = explode("#", $temp_rec[$i]);
+            $recruiters = json_encode($p_rec);
+            //recruiters = request('recruitername');
+
+            // echo "<pre>";
+            // print_r($recruiters);
+            //dd(json_decode($recruiters));
+
+        }
+        $role = new Position;
+        $role->recruiters = $recruiters;
+        $role->save();
+
+        die();
+
+        //file attachment
+        $file = time() . '.' . $request->filetype->extension();
+        // dd($imageName);
+        $randfile = $request->filetype->move(('document/position/jd'), $file);
+        //dd($randfile);
+
+        // dd($request);
         $multi_name_p = $request->name_position;
         $Position_ar = explode(';', substr($multi_name_p, 0, -1));
         //$role->client_name = request('name_position');
@@ -124,8 +152,9 @@ class PositionController extends Controller
                 $role->publish_website = request('website1');
                 $role->job_description_ckediter = request('editor1');
                 $role->file_attachment = request('filetype');
+                $role->created_by = session('USER_ID');
 
-                dd($role);
+                //dd($role);
 
                 $role->save();
             }
@@ -134,6 +163,18 @@ class PositionController extends Controller
 
         $request->session()->flash('roleinster', ' Inserted Successflly');
         return redirect('/position');
+    }
+
+    public function position_viewpage()
+    {
+
+        // $view = position::all();
+        // $view = position::distinct()->get(['client_name', 'crm', 'job_title', 'total_opening', 'recruiters', 'joining_date', 'created_by', 'created_at', 'updated_at']);
+        $view = position::distinct()->get();
+
+        //dd($view);
+        return view('position_view', compact('view'));
+
     }
 
 }

@@ -9,16 +9,29 @@ class Position extends Model
 {
     use HasFactory;
 
-    public function client_name()
+    public function client_na()
     {
 
         return $this->belongsTo(client::class, 'client_name');
     }
 
-    public function client_contactname()
+    public function client_crm()
     {
 
-        return $this->belongsTo(ClientContact::class, 'contact_name');
+        return $this->belongsTo(User::class, 'crm');
+
+    }
+
+    public function client_requiter()
+    {
+
+        return $this->belongsTo(User::class, 'recruiters');
+
+    }
+
+    public function position_create()
+    {
+        return $this->belongsTo(User::class, 'created_by');
     }
 
     // public function qualification_title()

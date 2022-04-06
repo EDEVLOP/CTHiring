@@ -118,6 +118,7 @@ class clientController extends Controller
             'CLIENT_PINCODE' => $request->pincode,
             'CLIENT_CRM' => $request->crm,
             'CLIENT_STATUS' => $request->status,
+
         ];
         $request->session()->put('client', $test);
 
@@ -142,7 +143,7 @@ class clientController extends Controller
     {
         //dd($request->data[0]['contactname']);
 
-        //dd(session('CLIENT_AREA'));
+        //dd(session('USER_ID'));
         // dd(count($request->data));
 
         $role = new client;
@@ -159,6 +160,7 @@ class clientController extends Controller
         $role->pincode = session('client')['CLIENT_PINCODE'];
         $role->crm_id = session('client')['CLIENT_CRM'];
         $role->status = session('client')['CLIENT_STATUS'];
+        $role->created_by = session('USER_ID');
         $role->save();
 
         $LastInsertId = $role->id;
@@ -194,6 +196,7 @@ class clientController extends Controller
             $role1->pincode = $request->data[$i]['pincode'];
 
             $role1->status = $request->data[$i]['status'];
+            $role1->created_by = session('USER_ID');
 
             // dd($role);
             $role1->save();
@@ -220,16 +223,38 @@ class clientController extends Controller
     public function viewclientshow()
     {
         // return view('viewclient');
-        $role_id = role::where('is_crm', '1')->pluck('id')->all();
-        //dd($role_id);
+        // $role_id = role::where('is_crm', '1')->pluck('id')->all();
+        // //dd($role_id);
 
-        $crm_user = User::whereIn('role_id', $role_id)->get();
+        // $crm_user = User::whereIn('role_id', $role_id)->get();
         //die;
 
         $view = client::all();
 
-        return view('viewclient', compact('view', 'crm_user'));
+        return view('viewclient', compact('view'));
     }
+    public function view_approv_client()
+    {
+
+        $view = client::all();
+
+        return view('client_approve', compact('view'));
+    }
+
+    public function viewclientshow_details($id)
+    {
+        //dd('hello');
+        $view = client::findorfail($id);
+
+        return view('viewclient_details', compact('view'));
+        //return view('viewclient_details');
+    }
+
+    // public function viewclientshow_detailsss()
+    // {
+
+    //     return view('viewclient_details');
+    // }
 
     // public function test_c_cont()
     // {$client_branch = client_location::all();

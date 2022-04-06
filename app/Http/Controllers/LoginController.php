@@ -151,11 +151,13 @@ class LoginController extends Controller
         $gt_otp = $get_otp[0]['otp'];
         if ($gt_otp == $request->input('otp')) {
             //dd('hi');
+            $request->session()->put('otpinvalid', false);
+
             return redirect('/');
 
         } else {
-            $request->session()->put('otpinvalid');
-            //dd($request);
+            $request->session()->put('otpinvalid', true);
+            // dd($request);
             return redirect('/login');
 
             // dd('no');

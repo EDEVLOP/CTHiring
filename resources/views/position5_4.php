@@ -418,7 +418,7 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
 
                                                             <select class="select2 form-control" data-toggle="tooltip"
                                                                 data-trigger="hover" data-placement="top" multiple=""
-                                                                name="recruitername[]" id="type_val"
+                                                                name="recruitername" id="type_val"
                                                                 onchange="openPopup()">
 
                                                                 <!--

@@ -16,10 +16,11 @@ class AdminAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        if(!$request->session()->has('otpinvalid')){
-			return redirect('/login');
-		}
+        if (!$request->session()->has('otpinvalid')) {
+
+            return redirect('/login');
+        }
         return $next($request);
     }
-    
+
 }
